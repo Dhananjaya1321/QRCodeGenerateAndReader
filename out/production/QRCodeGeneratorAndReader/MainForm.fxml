@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right, #143665, #194b89, #1c61af, #1b78d6, #1390ff);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="57.0" layoutY="144.0" onAction="#QRCodeGeneratorOnAction" prefHeight="112.0" prefWidth="212.0" style="-fx-background-color: linear-gradient(to right, #255fb5, #0090e9, #00bce7, #00e2aa, #13ff3a);;" text="QR Code Generator">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0055ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="345.0" layoutY="144.0" onAction="#QRCodeReaderOnAction" prefHeight="112.0" prefWidth="212.0" style="-fx-background-color: linear-gradient(to right, #255fb5, #0090e9, #00bce7, #00e2aa, #13ff3a);;" text="QR Code Scanner">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0055ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Label layoutX="163.0" layoutY="23.0" text="Welcame Here" textFill="#00ff19">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow height="26.94" radius="13.71" width="29.9" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
